@@ -7,8 +7,9 @@
       <% end %>
 
       <ul class="comments">
-        <li>Have you felt it?</li>
-        <li>There has been an awakening.</li>
+        <% @all_posts.each do |x| %>
+          <li><%= x.comment %></li>
+        <% end %>
       </ul>
     </div>
   </div>
